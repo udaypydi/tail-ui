@@ -1,3 +1,6 @@
+const paths = require('./config/paths');
+const path = require('path');
+
 module.exports = {
     env: {
       browser: true,
@@ -11,7 +14,7 @@ module.exports = {
       "import/resolver": {
         node: {
             extensions: ['.js', '.jsx', '.scss', '.css'],
-            moduleDirectory: ['node_modules', 'src/'],
+            moduleDirectory: ['node_modules', 'src/']
         },
       },
     },
@@ -30,5 +33,6 @@ module.exports = {
       'react',
     ],
     rules: {
+        "import/no-unresolved": [0, {commonjs: true, amd: true}]
     },
   };

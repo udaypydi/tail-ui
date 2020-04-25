@@ -1,12 +1,17 @@
-import React from 'react';
-const App = React.lazy(() => import('src/app'));
+import App from 'src/app';
+import Home from 'src/docs/home';
 
 const ROUTES_CONFIG = [
-    {
-        path: '/',
-        component: <App />,
-        id: 1,
-    }
+  {
+    route: '/home',
+    component: Home,
+    id: 2,
+  },
+  {
+    route: '/',
+    component: App,
+    id: 1,
+  },
 ];
 
 export default ROUTES_CONFIG;

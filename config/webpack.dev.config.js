@@ -9,5 +9,7 @@ module.exports = {
         contentBase: paths.output,
         port: 9000,
         hot: true,
+        publicPath: "/",
+        historyApiFallback: true,
     }
 };

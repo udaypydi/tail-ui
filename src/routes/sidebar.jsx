@@ -10,20 +10,20 @@ export default function Sidebar() {
       <p className="w-full text-center text-4xl text-indigo-100 border-indigo-100 border-b-2">Tail UI</p>
       {
         Object.keys(SIDE_BAR_CONFIG).map((key) => (
-            <div className="w-full pt-5">
+          <div className="w-full pt-5">
             <p className="font-bold text-indigo-100 m-2">{key}</p>
             {
                     SIDE_BAR_CONFIG[key].map((config) => (
-                        <p
+                      <p
                         className="w-full text-left mx-6 text-indigo-100 cursor-pointer hover:text-teal-300"
                         onClick={() => history.push(config.path)}
                         role="presentation"
-                        >
+                      >
                         {config.title}
-                        </p>
+                      </p>
                     ))
                 }
-            </div>
+          </div>
         ))
       }
     </div>

@@ -11,7 +11,7 @@ import ROUTES_CONFIG from './config';
 
 function CustomRoute({ route, component, showSidebar }) {
   const Component = withRouter(component);
-  const margin = showSidebar ? "ml-64" : "ml-0";
+  const margin = showSidebar ? 'ml-64' : 'ml-0';
   return (
     <Route exact path={route}>
       <div>
@@ -42,4 +42,9 @@ export default function RoutesManager() {
 CustomRoute.propTypes = {
   route: PropTypes.string.isRequired,
   component: PropTypes.node.isRequired,
+  showSidebar: PropTypes.bool,
+};
+
+CustomRoute.defaultProps = {
+  showSidebar: false,
 };

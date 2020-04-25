@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 import Button from 'uielements/button/button.component';
 import logo from './logo.png';
 import tail from './tail.png';
-import 'assets/css/main.css';
 import './app.scss';
 
 export default function App() {

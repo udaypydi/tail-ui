@@ -1,10 +1,17 @@
 import App from 'src/app';
 import Home from 'src/docs/home';
+import Button from 'src/docs/button';
 
 const ROUTES_CONFIG = [
   {
     route: '/home',
     component: Home,
+    showSidebar: true,
+    id: 1,
+  },
+  {
+    route: '/button',
+    component: Button,
     showSidebar: true,
     id: 2,
   },
@@ -12,7 +19,7 @@ const ROUTES_CONFIG = [
     route: '/',
     component: App,
     showSidebar: false,
-    id: 1,
+    id: 3,
   },
 ];
 
@@ -34,7 +41,7 @@ export const SIDE_BAR_CONFIG = {
   COMPONENTS: [
     {
       title: 'Button',
-      path: '/home',
+      path: '/button',
     },
     {
       title: 'Label',

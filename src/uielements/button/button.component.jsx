@@ -20,7 +20,7 @@ function Button(props) {
 }
 
 Button.propTypes = {
-  buttonText: PropTypes.string.isRequired,
+  buttonText: PropTypes.string,
   primary: PropTypes.bool,
   onClick: PropTypes.func,
 
@@ -29,6 +29,7 @@ Button.propTypes = {
 Button.defaultProps = {
   primary: true,
   onClick: () => null,
+  buttonText: 'Button',
 };
 
 

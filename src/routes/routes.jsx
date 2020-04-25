@@ -9,10 +9,19 @@ import PropTypes from 'prop-types';
 import Sidebar from 'src/routes/sidebar';
 import ROUTES_CONFIG from './config';
 
-function CustomRoute({ route, component }) {
+function CustomRoute({ route, component, showSidebar }) {
+  const Component = withRouter(component);
+  const margin = showSidebar ? 'ml-64' : 'ml-0';
   return (
     <Route exact path={route}>
-      {withRouter(component)}
+      <div>
+        {
+          showSidebar && <Sidebar />
+        }
+        <div className={margin}>
+          <Component />
+        </div>
+      </div>
     </Route>
   );
 }
@@ -20,7 +29,6 @@ function CustomRoute({ route, component }) {
 export default function RoutesManager() {
   return (
     <Router>
-      <Sidebar />
       <Switch>
         {
             ROUTES_CONFIG.map((route) => CustomRoute(route))
@@ -34,4 +42,9 @@ export default function RoutesManager() {
 CustomRoute.propTypes = {
   route: PropTypes.string.isRequired,
   component: PropTypes.node.isRequired,
+  showSidebar: PropTypes.bool,
+};
+
+CustomRoute.defaultProps = {
+  showSidebar: false,
 };

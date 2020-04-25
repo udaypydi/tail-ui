@@ -5,11 +5,13 @@ const ROUTES_CONFIG = [
   {
     route: '/home',
     component: Home,
+    showSidebar: true,
     id: 2,
   },
   {
     route: '/',
     component: App,
+    showSidebar: false,
     id: 1,
   },
 ];

@@ -14,4 +14,55 @@ const ROUTES_CONFIG = [
   },
 ];
 
+export const SIDE_BAR_CONFIG = {
+  GUIDES: [
+    {
+      title: 'Introduction',
+      path: '/home',
+    },
+    {
+      title: 'Get Started',
+      path: '/home',
+    },
+    {
+      title: 'Github',
+      path: '/home',
+    },
+  ],
+  COMPONENTS: [
+    {
+      title: 'Button',
+      path: '/home',
+    },
+    {
+      title: 'Label',
+      path: '/home',
+    },
+    {
+      title: 'Input',
+      path: '/home',
+    },
+    {
+      title: 'Form',
+      path: '/home',
+    },
+    {
+      title: 'Divider',
+      path: '/home',
+    },
+    {
+      title: 'Icon',
+      path: '/home',
+    },
+    {
+      title: 'Image',
+      path: '/home',
+    },
+    {
+      title: 'Container',
+      path: '/home',
+    },
+  ],
+};
+
 export default ROUTES_CONFIG;

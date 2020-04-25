@@ -6,8 +6,8 @@ import {
   withRouter,
 } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Sidebar from 'src/routes/sidebar';
 import ROUTES_CONFIG from './config';
-
 
 function CustomRoute({ route, component }) {
   return (
@@ -20,6 +20,7 @@ function CustomRoute({ route, component }) {
 export default function RoutesManager() {
   return (
     <Router>
+      <Sidebar />
       <Switch>
         {
             ROUTES_CONFIG.map((route) => CustomRoute(route))

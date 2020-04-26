@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from 'uielements/button/button.component';
-import Message from 'uielements/message/message.component';
+
 function ButtonDoc() {
   return (
     <div className="p-10">

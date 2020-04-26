@@ -6,7 +6,9 @@ import 'src/assets/css/main.css';
  */
 
 function Button(props) {
-  const { buttonText, primary, onClick, className, style, bgColor, color } = props;
+  const {
+    buttonText, primary, onClick, className, style, bgColor, color,
+  } = props;
   let btnClass = '';
 
   if (primary) {
@@ -62,7 +64,7 @@ Button.defaultProps = {
   className: '',
   style: {},
   bgColor: 'transparent',
-  color: 'black'
+  color: 'black',
 };
 
 

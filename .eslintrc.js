@@ -33,6 +33,7 @@ module.exports = {
       'react',
     ],
     rules: {
-        "import/no-unresolved": [0, {commonjs: true, amd: true}]
+        "import/no-unresolved": [0, {commonjs: true, amd: true}],
+        "react/jsx-filename-extension": [0, {commonjs: true, amd: true}],
     },
   };

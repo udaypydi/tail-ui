@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'test-utils';
-import  Button from 'uielements/button/button.component.jsx';
+import  Button from 'uielements/button/button.component.js';
 
 it('should take a snapshot', () => {
     const { asFragment } = render(<Button buttonText="test button" />)

@@ -37,7 +37,7 @@ Message.PropTypes = {
   /**
    * Message text
    */
-  messageText: PropTypes.string,
+  messageText: PropTypes.string.isRequired,
   /**
    * Custom classnames, Any valid className or a tailwind class (ex: `text-blue-700`).
    */

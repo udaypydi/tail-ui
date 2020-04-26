@@ -1,12 +1,6 @@
 Simple Message example:
 
 ```js
-<Message />
-```
-
-Message example with Custom Text:
-
-```js
 <Message messageText="Hello World" />
 ```
 

@@ -21,3 +21,9 @@ Button with Tailwind Classes:
 ```js
 <Button className="text-green-500 border-green-500" />
 ```
+
+Rounded Button:
+
+```js
+<Button rounded />
+```

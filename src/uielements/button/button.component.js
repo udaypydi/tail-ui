@@ -6,11 +6,15 @@ import 'src/assets/css/main.css';
  */
 
 function Button(props) {
-  const { buttonText, primary, onClick, className, style, bgColor, color, rounded } = props;
+  const {
+    buttonText, primary, onClick, className, style, bgColor, color, rounded,
+  } = props;
   let btnClass = '';
 
   if (primary) {
-    btnClass = `bg-${bgColor}-700 hover:bg-${bgColor}-500 text-${color}-700 font-semibold hover:text-${color}-700 py-2 px-4 border border-black-700`;
+    btnClass = `
+    bg-${bgColor}-700 hover:bg-${bgColor}-500 text-${color}-700 
+    font-semibold hover:text-${color}-700 py-2 px-4 border border-black-700`;
   }
 
   if (rounded) {
@@ -59,7 +63,9 @@ Button.propTypes = {
    */
   color: PropTypes.string,
   /**
-   * Adds default border radius to button. The border radius can be modified through custom styles or through tailwind classname (`rounded`, `rounded-sm`, `rounded-md` etc)
+   * Adds default border radius to button.
+   * The border radius can be modified through custom styles
+   * or through tailwind classname (`rounded`, `rounded-sm`, `rounded-md` etc)
    */
   rounded: PropTypes.bool,
 };

@@ -69,7 +69,7 @@ Input.propTypes = {
    * Accepts the props of standard HTML input.
    */
   type: PropTypes.bool,
-    /**
+  /**
    * Capture on change of input
    */
   onChange: PropTypes.func,

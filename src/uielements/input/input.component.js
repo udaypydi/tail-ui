@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 function Input(props) {
   const {
-    placeholder, className, rounded, disabled, error, fluid, style, type,
+    placeholder, className, rounded, disabled, error, fluid, style, type, onChange,
   } = props;
 
   const defaultInput = 'bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal';
@@ -28,6 +28,7 @@ function Input(props) {
       placeholder={placeholder}
       disabled={disabled}
       type={type}
+      onChange={onChange}
     />
 
   );
@@ -68,6 +69,10 @@ Input.propTypes = {
    * Accepts the props of standard HTML input.
    */
   type: PropTypes.bool,
+  /**
+   * Capture on change of input
+   */
+  onChange: PropTypes.func,
 };
 
 Input.defaultProps = {
@@ -79,6 +84,7 @@ Input.defaultProps = {
   fluid: false,
   style: {},
   type: 'string',
+  onChange: () => false,
 };
 
 export default Input;

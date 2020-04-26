@@ -7,7 +7,14 @@ import 'src/assets/css/main.css';
 
 function Button(props) {
   const {
-    buttonText, primary, onClick, className, style, bgColor, color, rounded,
+    buttonText,
+    primary,
+    onClick,
+    className,
+    style,
+    bgColor,
+    color,
+    rounded,
   } = props;
   let btnClass = '';
 
@@ -80,6 +87,5 @@ Button.defaultProps = {
   color: 'black',
   rounded: false,
 };
-
 
 export default Button;

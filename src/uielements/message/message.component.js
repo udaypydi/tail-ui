@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 function Message(props) {
   const {
-    className, messageText, color, style, rounded,
+    className, messageText, color, style, rounded, children,
   } = props;
   let messageClass = `bg-${color}-100 border border-${color}-400 text-${color}-700 px-4 py-3 relative`;
 
@@ -23,12 +23,12 @@ function Message(props) {
       <span className="block sm:inline">
         {messageText}
         {' '}
-        {props.children}
+        {children}
       </span>
     </div>
   );
 }
-Message.PropTypes = {
+Message.propTypes = {
   /**
    * Message text
    */
@@ -54,14 +54,16 @@ Message.PropTypes = {
   /**
    * Message box can have the Child element.
    */
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 Message.defaultProps = {
   className: '',
   style: {},
   color: 'black',
   rounded: false,
-  messageText: 'Message Box',
 };
 
 export default Message;

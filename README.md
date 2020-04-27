@@ -9,15 +9,15 @@
     <br />
     <div>
         <!-- travis -->
-        <a href="https://travis-ci.org/udaypydi/react-simple-boilerplate">
-            <img src="https://travis-ci.org/udaypydi/react-simple-boilerplate.svg" alt="Test Coverage" />
+        <a href="https://travis-ci.com/github/udaypydi/tail-ui">
+            <img src="https://api.travis-ci.com/udaypydi/tail-ui.svg" alt="Test Coverage" />
         </a>
         <!-- Mit License -->
-        <a href="https://github.com/udaypydi/react-simple-boilerplate/blob/master/LICENSE">
-            <img src="https://img.shields.io/github/license/udaypydi/react-simple-boilerplate">
+        <a href="https://github.com/udaypydi/tail-ui/blob/master/LICENSE">
+            <img src="https://img.shields.io/github/license/udaypydi/tail-ui">
         </a>
         <!-- Pr's -->
-        <a href="https://github.com/udaypydi/react-simple-boilerplate/blob/master/CONTRIBUTING.md"> 
+        <a href="https://github.com/udaypydi/tail-ui/blob/master/CONTRIBUTING.md"> 
         <img src="https://img.shields.io/badge/PRs-welcome-blueviolet.svg">
         </a>
     </div>

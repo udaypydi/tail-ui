@@ -1,15 +1,25 @@
-# Contributing to React Simple Boilerplate
+# Contributing to Tail UI
 
 Install the latest [npm](https://docs.npmjs.com/).
 
 Clone the repository:
 
 ```
-$ git@github.com:udaypydi/react-simple-boilerplate.git && cd react-simple-boilerplate
+$ git@github.com:udaypydi/tail-ui.git && cd tail-ui
 $ yarn
 ```
 
 ## Commands
+
+Run Docs
+```
+    # run docs in dev mode
+    npm run start:docs
+    
+    # build docs
+    npm run build:docs
+
+```
 
 Run unit tests
 
@@ -21,6 +31,7 @@ Run unit tests
 
     npm run test:watch
 ```
+
 
 ### Linting
 ```

@@ -11,6 +11,16 @@ $ yarn
 
 ## Commands
 
+Run Docs
+```
+    # run docs in dev mode
+    npm run start:docs
+    
+    # build docs
+    npm run build:docs
+
+```
+
 Run unit tests
 
 ```
@@ -22,15 +32,6 @@ Run unit tests
     npm run test:watch
 ```
 
-Run Docs
-```
-    # run docs in dev mode
-    npm run start:docs
-    
-    # build docs
-    npm run build:docs
-
-```
 
 ### Linting
 ```

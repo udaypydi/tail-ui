@@ -8,19 +8,24 @@ function Container(props) {
         raised, 
         fluid,
         rounded,
+        children,
+        horizontal,
     } = props;
 
     return (
         <div className={
             classnames(
-            {
-                "shadow-md": raised,
-                "w-full": fluid,
-                "rounded": rounded,
-            },
-            className,
+                "flex",
+                {
+                    "shadow-md": raised,
+                    "w-full": fluid,
+                    "rounded": rounded,
+                    "flex-row": horizontal,
+                },
+                className,
             )
         }>
+            {children}
         </div>
     )
 }
@@ -42,6 +47,11 @@ Container.propTypes = {
      * Adds a default `border-radius` to the container. The radius can be changed by passing tailwind classNames (`radius`, `radius-md`, `radius-lg`)
      */
     rounded: PropTypes.bool,
+    children: PropTypes.node,
+    /**
+     * Adds horizontal flex to the container.
+     */
+    horizontal: PropTypes.bool,
 }
 
 Container.defaultProps = {
@@ -49,6 +59,8 @@ Container.defaultProps = {
     raised: false,
     fluid: false,
     rounded: false,
+    children: null,
+    horizontal: true,
 };
 
 export default Container;

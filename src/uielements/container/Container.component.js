@@ -9,7 +9,7 @@ function Container(props) {
         fluid,
         rounded,
         children,
-        horizontal,
+        vertical,
     } = props;
 
     return (
@@ -20,7 +20,8 @@ function Container(props) {
                     "shadow-md": raised,
                     "w-full": fluid,
                     "rounded": rounded,
-                    "flex-row": horizontal,
+                    "flex-col": vertical,
+                    "flex-row": !vertical,
                 },
                 className,
             )
@@ -49,9 +50,9 @@ Container.propTypes = {
     rounded: PropTypes.bool,
     children: PropTypes.node,
     /**
-     * Adds horizontal flex to the container.
+     * Adds vertical flex to the container. Defaults to false, renders the children horizontally by default.
      */
-    horizontal: PropTypes.bool,
+    vertical: PropTypes.bool,
 }
 
 Container.defaultProps = {
@@ -60,7 +61,7 @@ Container.defaultProps = {
     fluid: false,
     rounded: false,
     children: null,
-    horizontal: true,
+    vertical: false,
 };
 
 export default Container;

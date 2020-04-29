@@ -5,7 +5,7 @@ Simple Select:
     options={[
         {
             name: 'TailUI',
-            value: 'TailUI'
+            value: 'tailui'
         },
         {
             name: 'Css',

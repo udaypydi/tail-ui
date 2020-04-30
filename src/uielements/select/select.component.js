@@ -5,19 +5,20 @@ import classnames from 'classnames';
 import dropdownicon from 'assets/icons/drop-down-arrow.svg';
 
 function Option(props) {
-    const { options, onClick, optionClass } = props;
-    return (
-        <div className={classnames("border absolute bg-white w-full", optionClass)}>
-            {options.map(option => (
-                <p 
-                    onClick={() => onClick(option)}
-                    className="p-2 border-b cursor-pointer"
-                >
-                    {option.name}
-                </p>
-            ))}
-        </div>
-    );
+  const { options, onClick, optionClass } = props;
+  return (
+    <div className={classnames('border absolute bg-white w-full', optionClass)}>
+      {options.map((option) => (
+        <p
+          onClick={() => onClick(option)}
+          className="p-2 border-b cursor-pointer"
+          role="presentation"
+        >
+          {option.name}
+        </p>
+      ))}
+    </div>
+  );
 }
 
 function Select(props) {
@@ -26,33 +27,41 @@ function Select(props) {
   const { options, containerClass, optionClass } = props;
 
   function handleClick(option) {
-      setSelectedOptions(option);
-      setShowDropdown(false);
+    setSelectedOptions(option);
+    setShowDropdown(false);
   }
 
   return (
-      <div id="tailui-dropdown" className="inline-block relative">
-        <div 
-            onClick={() => setShowDropdown(!showDropdown)}
-            className={classnames(
-                'border-gray-300 border p-2 flex items-center cursor-pointer rounded-md font-mono',
-                {
-                    'text-gray-400': !selectedOption.name,
-                },
-                containerClass,
-        )}>
-            {selectedOption.name || 'Select Event'}
-            <img src={dropdownicon} className="h-4 ml-1" />
-        </div>
-        {
+    <div id="tailui-dropdown" className="inline-block relative">
+      <div
+        onClick={() => setShowDropdown(!showDropdown)}
+        role="presentation"
+        className={classnames(
+          'border-gray-300 border p-2 flex items-center cursor-pointer rounded-md font-mono',
+          {
+            'text-gray-400': !selectedOption.name,
+          },
+          containerClass,
+        )}
+      >
+        {selectedOption.name || 'Select Event'}
+        <img src={dropdownicon} className="h-4 ml-1" alt="Select Dropdown" />
+      </div>
+      {
             showDropdown && (
-                ReactDOM.createPortal(<Option options={options} optionClass={optionClass} onClick={handleClick} />, document.getElementById('tailui-dropdown'))
+              ReactDOM.createPortal(<Option options={options} optionClass={optionClass} onClick={handleClick} />, document.getElementById('tailui-dropdown'))
             )
         }
-        
-      </div>
+
+    </div>
   );
 }
+
+Option.propTypes = {
+  options: PropTypes.shape([]).isRequired,
+  onClick: PropTypes.func.isRequired,
+  optionClass: PropTypes.string.isRequired,
+};
 
 Select.propTypes = {
   /**

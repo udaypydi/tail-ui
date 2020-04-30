@@ -24,11 +24,12 @@ function Option(props) {
 function Select(props) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedOption, setSelectedOptions] = useState({});
-  const { options, containerClass, optionClass } = props;
+  const { options, containerClass, optionClass, onChange } = props;
 
   function handleClick(option) {
     setSelectedOptions(option);
     setShowDropdown(false);
+    onChange(option);
   }
 
   return (
@@ -80,12 +81,17 @@ Select.propTypes = {
      * Any valid className or a tailwind class (ex: `text-blue-700`).
      */
   optionClass: PropTypes.string,
+  /**
+   * onChange handler for select. Returns the selected option
+   */
+  onChange: PropTypes.func,
 };
 
 Select.defaultProps = {
   options: [],
   containerClass: '',
   optionClass: '',
+  onChange: () => null,
 };
 
 export default Select;

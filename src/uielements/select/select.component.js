@@ -24,7 +24,9 @@ function Option(props) {
 function Select(props) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedOption, setSelectedOptions] = useState({});
-  const { options, containerClass, optionClass, onChange } = props;
+  const {
+    options, containerClass, optionClass, onChange,
+  } = props;
 
   function handleClick(option) {
     setSelectedOptions(option);

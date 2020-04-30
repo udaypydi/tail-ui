@@ -11,6 +11,7 @@
     "build:css": "postcss src/assets/css/styles.css -o src/assets/css/main.css",
     "watch:css": "postcss src/assets/css/styles.css -o src/assets/css/main.css",
     "test": "jest --collect-coverage",
+    "test:update": "jest --collect-coverage --updateSnapshot",
     "start:docs": "npx styleguidist server",
     "build:docs": "npx styleguidist build",
     "test:watch": "jest --watch"

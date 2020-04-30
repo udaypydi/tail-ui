@@ -2,9 +2,21 @@
 
 exports[`should take a snapshot 1`] = `
 <DocumentFragment>
-  <select
-    class="pt-2"
-    id="tailui-select"
-  />
+  <div
+    class="inline-block relative"
+    id="tailui-dropdown"
+  >
+    <div
+      class="border-gray-300 border p-2 flex items-center cursor-pointer rounded-md font-mono text-gray-400"
+      role="presentation"
+    >
+      Select Event
+      <img
+        alt="Select Dropdown"
+        class="h-4 ml-1"
+        src=""
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;

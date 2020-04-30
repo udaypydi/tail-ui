@@ -1,28 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import dropdownicon from 'assets/icons/drop-down-arrow.svg';
 
 function Select(props) {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [selectedOption, setSelectedOptions] = useState({});
   const { options, containerClass, optionClass } = props;
   return (
-    <select
-      id="tailui-select"
-      className={classnames(
-        'pt-2',
-        containerClass,
-      )}
-    >
-      {
-                options.map((op) => (
-                  <option
-                    value={op.value}
-                    className={classnames('pt-5', optionClass)}
-                  >
-                    {op.name}
-                  </option>
-                ))
-            }
-    </select>
+      <div className="inline-block">
+        {
+            !showDropdown && (
+                <div className={classnames(
+                    'border-gray-300 border p-2 flex items-center cursor-pointer rounded-md font-mono'
+                )}>
+                    {selectedOption.text || 'Select Event'}
+                    <img src={dropdownicon} className="h-4 ml-1" />
+                </div>
+            )
+        }
+      </div>
   );
 }
 

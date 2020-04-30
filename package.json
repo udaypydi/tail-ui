@@ -1,7 +1,7 @@
 {
   "name": "tail-ui",
   "version": "1.0.0",
-  "description": "A UI lobrary for React built on Tailwind Css ",
+  "description": "A UI library for React built on Tailwind Css ",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:css && webpack ---config ./config/webpack.prod.config.js",
@@ -23,7 +23,9 @@
     "webpack hmr",
     "travis",
     "react-simple-boilerplate",
-    "react-boilerplate"
+    "react-boilerplate",
+    "tailwindcss",
+    "react ui component"
   ],
   "author": "Uday Bhaskhar",
   "license": "MIT",

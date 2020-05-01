@@ -1,14 +1,34 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import FormInput from 'uielements/input/input.component';
 import dropdownicon from 'assets/icons/drop-down-arrow.svg';
 
 function Option(props) {
-  const { options, onClick, optionClass } = props;
+  const {
+    options, onClick, optionClass, searchable,
+  } = props;
+  const [filteredOptions, setFilteredOptions] = useState(options);
+
+  function handleOptionFilter(value) {
+    const opts = options.filter(
+      (option) => option.name.toLowerCase().includes(value.toLowerCase()),
+    );
+    setFilteredOptions(opts);
+  }
+
   return (
-    <div className={classnames('border absolute bg-white w-full', optionClass)}>
-      {options.map((option) => (
+    <div className={classnames('border absolute bg-white w-full z-50', optionClass)}>
+      {
+            searchable && (
+            <FormInput
+              className="rounded-md"
+              placeholder="Search..."
+              onChange={(e) => handleOptionFilter(e.target.value)}
+            />
+            )
+        }
+      {filteredOptions.map((option) => (
         <p
           onClick={() => onClick(option)}
           className="p-2 border-b cursor-pointer"
@@ -25,7 +45,7 @@ function Select(props) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedOption, setSelectedOptions] = useState({});
   const {
-    options, containerClass, optionClass, onChange,
+    options, containerClass, optionClass, onChange, searchable,
   } = props;
 
   function handleClick(option) {
@@ -52,7 +72,12 @@ function Select(props) {
       </div>
       {
             showDropdown && (
-              ReactDOM.createPortal(<Option options={options} optionClass={optionClass} onClick={handleClick} />, document.getElementById('tailui-dropdown'))
+            <Option
+              options={options}
+              optionClass={optionClass}
+              onClick={handleClick}
+              searchable={searchable}
+            />
             )
         }
 
@@ -64,6 +89,7 @@ Option.propTypes = {
   options: PropTypes.shape([]).isRequired,
   onClick: PropTypes.func.isRequired,
   optionClass: PropTypes.string.isRequired,
+  searchable: PropTypes.bool.isRequired,
 };
 
 Select.propTypes = {
@@ -87,6 +113,10 @@ Select.propTypes = {
    * onChange handler for select. Returns the selected option
    */
   onChange: PropTypes.func,
+  /**
+   * Make the dropdown searchable
+   */
+  searchable: PropTypes.bool,
 };
 
 Select.defaultProps = {
@@ -94,6 +124,7 @@ Select.defaultProps = {
   containerClass: '',
   optionClass: '',
   onChange: () => null,
+  searchable: false,
 };
 
 export default Select;

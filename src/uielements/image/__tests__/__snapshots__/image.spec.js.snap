@@ -6,6 +6,7 @@ exports[`should take a snapshot 1`] = `
     alt=""
     class=""
     role="presentation"
+    src="https://www.google.com"
   />
 </DocumentFragment>
 `;

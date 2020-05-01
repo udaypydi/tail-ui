@@ -1,28 +1,31 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import FormInput from 'uielements/input/input.component';
 import dropdownicon from 'assets/icons/drop-down-arrow.svg';
 
 function Option(props) {
-  const { options, onClick, optionClass, searchable } = props;
+  const {
+    options, onClick, optionClass, searchable,
+  } = props;
   const [filteredOptions, setFilteredOptions] = useState(options);
 
   function handleOptionFilter(value) {
-    const opts = options.filter(option => option.name.toLowerCase().includes(value.toLowerCase()));
-    setFilteredOptions(opts)
+    const opts = options.filter(
+      (option) => option.name.toLowerCase().includes(value.toLowerCase()),
+    );
+    setFilteredOptions(opts);
   }
 
   return (
     <div className={classnames('border absolute bg-white w-full z-50', optionClass)}>
-        {
+      {
             searchable && (
-                <FormInput 
-                    className="rounded-md" 
-                    placeholder="Search..."
-                    onChange={e => handleOptionFilter(e.target.value)}
-                />
+            <FormInput
+              className="rounded-md"
+              placeholder="Search..."
+              onChange={(e) => handleOptionFilter(e.target.value)}
+            />
             )
         }
       {filteredOptions.map((option) => (
@@ -69,12 +72,12 @@ function Select(props) {
       </div>
       {
             showDropdown && (
-                <Option 
-                    options={options} 
-                    optionClass={optionClass} 
-                    onClick={handleClick} 
-                    searchable={searchable}
-                />
+            <Option
+              options={options}
+              optionClass={optionClass}
+              onClick={handleClick}
+              searchable={searchable}
+            />
             )
         }
 

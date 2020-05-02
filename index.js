@@ -1,6 +1,15 @@
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom';
-import RoutesManager from 'src/routes/routes';
-import 'assets/css/main.css';
+import Button from 'uielements/button/button.component';
+import Input from 'uielements/input/input.component';
+import Container from 'uielements/container/container.component';
+import Header from 'uielements/header/header.component';
+import Image from 'uielements/image/image.component';
+import Select from 'uielements/select/select.component';
 
-ReactDOM.render(<RoutesManager />, document.getElementById('root'));
+module.exports = {
+    Button,
+    Input,
+    Container,
+    Header,
+    Image,
+    Select,
+};

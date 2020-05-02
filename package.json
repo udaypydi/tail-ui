@@ -2,7 +2,7 @@
   "name": "tail-ui",
   "version": "1.0.0",
   "description": "A UI library for React built on Tailwind Css ",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "npm run build:css && webpack ---config ./config/webpack.prod.config.js",
     "dev": "npm run watch:css && webpack-dev-server --config ./config/webpack.dev.config.js",
@@ -27,6 +27,7 @@
     "tailwindcss",
     "react ui component"
   ],
+  "files": ["lib", "package.json", "LICENSE", "README.md"],
   "author": "Uday Bhaskhar",
   "license": "MIT",
   "dependencies": {

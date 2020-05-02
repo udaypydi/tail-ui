@@ -3,3 +3,4 @@ node_modules/
 coverage/
 .gitignore
 .DS_Store
+lib/

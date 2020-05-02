@@ -1,0 +1,14 @@
+node_modules/
+src/
+config/
+coverage/
+styleguide/
+/build/
+coverage/
+.gitignore
+.DS_Store
+.babelrc
+.eslintignore
+.eslintrc.js
+.gitignore
+.gitattribuites

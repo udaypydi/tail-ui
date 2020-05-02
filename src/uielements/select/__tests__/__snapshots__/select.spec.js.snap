@@ -3,11 +3,11 @@
 exports[`should take a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="inline-block relative"
+    class="inline-block relative SelectContainer"
     id="tailui-dropdown"
   >
     <div
-      class="border-gray-300 border p-2 flex items-center cursor-pointer rounded-md font-mono text-gray-400"
+      class="border-gray-300 border p-2 flex items-center cursor-pointer rounded-md font-mono justify-between text-gray-400"
       role="presentation"
     >
       Select Event

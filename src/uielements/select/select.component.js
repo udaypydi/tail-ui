@@ -13,7 +13,9 @@ function Option(props) {
   const inputEl = React.createRef();
 
   useEffect(() => {
-    inputEl.current.focus();
+    if (searchable) {
+      inputEl.current.focus();
+    }
   }, []);
   function handleOptionFilter(value) {
     const opts = options.filter(

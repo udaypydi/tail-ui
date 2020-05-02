@@ -14,9 +14,8 @@ function Option(props) {
 
   useEffect(() => {
     if (searchable) {
-        inputEl.current.focus();
-    }  
-    
+      inputEl.current.focus();
+    }
   }, []);
   function handleOptionFilter(value) {
     const opts = options.filter(

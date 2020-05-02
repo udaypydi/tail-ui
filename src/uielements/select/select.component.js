@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import FormInput from 'uielements/input/input.component';
 import dropdownicon from 'assets/icons/drop-down-arrow.svg';
+import './select.scss';
 
 function Option(props) {
   const {
     options, onClick, optionClass, searchable,
   } = props;
   const [filteredOptions, setFilteredOptions] = useState(options);
+  const inputEl = React.createRef();
 
+  useEffect(() => {
+    inputEl.current.focus();
+  }, []);
   function handleOptionFilter(value) {
     const opts = options.filter(
       (option) => option.name.toLowerCase().includes(value.toLowerCase()),
@@ -25,6 +30,7 @@ function Option(props) {
               className="rounded-md"
               placeholder="Search..."
               onChange={(e) => handleOptionFilter(e.target.value)}
+              ref={inputEl}
             />
             )
         }
@@ -45,7 +51,7 @@ function Select(props) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedOption, setSelectedOptions] = useState({});
   const {
-    options, containerClass, optionClass, onChange, searchable,
+    options, containerClass, optionClass, onChange, searchable, dropdownWrapperClass,
   } = props;
 
   function handleClick(option) {
@@ -55,12 +61,12 @@ function Select(props) {
   }
 
   return (
-    <div id="tailui-dropdown" className="inline-block relative">
+    <div id="tailui-dropdown" className={classnames('inline-block relative SelectContainer', dropdownWrapperClass)}>
       <div
         onClick={() => setShowDropdown(!showDropdown)}
         role="presentation"
         className={classnames(
-          'border-gray-300 border p-2 flex items-center cursor-pointer rounded-md font-mono',
+          'border-gray-300 border p-2 flex items-center cursor-pointer rounded-md font-mono justify-between',
           {
             'text-gray-400': !selectedOption.name,
           },
@@ -117,6 +123,11 @@ Select.propTypes = {
    * Make the dropdown searchable
    */
   searchable: PropTypes.bool,
+
+  /**
+   * Customize the dropdown wrapper, like (`height`, `width`)
+   */
+  dropdownWrapperClass: PropTypes.string,
 };
 
 Select.defaultProps = {
@@ -125,6 +136,7 @@ Select.defaultProps = {
   optionClass: '',
   onChange: () => null,
   searchable: false,
+  dropdownWrapperClass: '',
 };
 
 export default Select;

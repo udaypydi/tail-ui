@@ -38,16 +38,13 @@
 <div align="left">
     <h1>Usage</h1>
     <strong>Button</strong>
-    <code>
-        ``` jsx
-            import { Button } from 'tail-ui';
+    ```
+        import { Button } from 'tail-ui';
 
-            function App(props) {
-                return (
-                    <Button style={{ background: '#0077b5', color: '#ffffff' }} />
-                )
-            }
-            
-        ```
-    </code>
+        function App(props) {
+            return (
+                <Button style={{ background: '#0077b5', color: '#ffffff' }} />
+            )
+        }
+    ```
 </div>

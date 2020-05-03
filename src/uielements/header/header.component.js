@@ -3,7 +3,9 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
 function Header(props) {
-  const { text, type, className, disabled } = props;
+  const {
+    text, type, className, disabled,
+  } = props;
   return (
     <p className={
             classnames(

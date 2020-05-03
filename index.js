@@ -5,7 +5,7 @@ import Header from 'uielements/header/header.component';
 import Image from 'uielements/image/image.component';
 import Select from 'uielements/select/select.component';
 
-module.exports = {
+const Components = {
     Button,
     Input,
     Container,
@@ -13,3 +13,6 @@ module.exports = {
     Image,
     Select,
 };
+
+
+export default Components;

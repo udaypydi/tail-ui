@@ -4,6 +4,7 @@ const paths = require('./paths');
 module.exports = {
   mode: 'production',
   entry: paths.entry,
+  devtool: 'eval-source-map',
   output: {
     path: path.resolve(__dirname, '../lib'),
     filename: 'index.js',

@@ -38,7 +38,8 @@
 <div align="left">
     <h1>Usage</h1>
     <strong>Button</strong>
-    ```
+    <br />
+
         import { Button } from 'tail-ui';
 
         function App(props) {
@@ -46,5 +47,5 @@
                 <Button style={{ background: '#0077b5', color: '#ffffff' }} />
             )
         }
-    ```
+
 </div>

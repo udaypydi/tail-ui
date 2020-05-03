@@ -24,7 +24,7 @@
 </div>
 
 <div align="left">
-    <strong>Components</strong>
+    <h1>Components</h1>
     <ul>
         <li>Button</li>
         <li>Container</li>

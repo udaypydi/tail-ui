@@ -2,3 +2,5 @@ node_modules/
 /build/
 coverage/
 .gitignore
+.DS_Store
+lib/

@@ -1,8 +1,8 @@
 {
   "name": "tail-ui",
   "version": "1.0.0",
-  "description": "A UI lobrary for React built on Tailwind Css ",
-  "main": "index.js",
+  "description": "A UI library for React built on Tailwind Css ",
+  "main": "lib/index.js",
   "scripts": {
     "build": "npm run build:css && webpack ---config ./config/webpack.prod.config.js",
     "dev": "npm run watch:css && webpack-dev-server --config ./config/webpack.dev.config.js",
@@ -11,6 +11,7 @@
     "build:css": "postcss src/assets/css/styles.css -o src/assets/css/main.css",
     "watch:css": "postcss src/assets/css/styles.css -o src/assets/css/main.css",
     "test": "jest --collect-coverage",
+    "test:update": "jest --collect-coverage --updateSnapshot",
     "start:docs": "npx styleguidist server",
     "build:docs": "npx styleguidist build",
     "test:watch": "jest --watch"
@@ -22,8 +23,11 @@
     "webpack hmr",
     "travis",
     "react-simple-boilerplate",
-    "react-boilerplate"
+    "react-boilerplate",
+    "tailwindcss",
+    "react ui component"
   ],
+  "files": ["lib", "package.json", "LICENSE", "README.md"],
   "author": "Uday Bhaskhar",
   "license": "MIT",
   "dependencies": {

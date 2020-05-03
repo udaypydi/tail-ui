@@ -2,11 +2,8 @@
 
 exports[`should take a snapshot 1`] = `
 <DocumentFragment>
-  <img
-    alt=""
-    class=""
-    role="presentation"
-    src="https://www.google.com"
+  <p
+    class="font-bold text-6xl"
   />
 </DocumentFragment>
 `;

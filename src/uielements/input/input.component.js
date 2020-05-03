@@ -2,9 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-function Input(props) {
+const Input = React.forwardRef((props, ref) => {
   const {
-    placeholder, className, rounded, disabled, error, fluid, style, type, onChange,
+    placeholder,
+    className,
+    rounded,
+    disabled,
+    error, fluid, style, type, onChange,
   } = props;
 
   const defaultInput = 'bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal';
@@ -24,6 +28,7 @@ function Input(props) {
           'w-full': fluid,
         },
       )}
+      ref={ref}
       style={style}
       placeholder={placeholder}
       disabled={disabled}
@@ -32,7 +37,7 @@ function Input(props) {
     />
 
   );
-}
+});
 
 Input.propTypes = {
   /**

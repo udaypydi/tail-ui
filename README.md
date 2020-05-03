@@ -34,3 +34,19 @@
         <li>Select</li>
     </ul>
 </div>
+
+<div align="left">
+    <h1>Usage</h1>
+    <code>
+        ``` jsx
+            import { Button } from 'tail-ui';
+
+            function App(props) {
+                return (
+                    <Button style={{ background: '#0077b5', color: '#ffffff' }} />
+                )
+            }
+            
+        ```
+    </code>
+</div>

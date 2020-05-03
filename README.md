@@ -22,3 +22,15 @@
         </a>
     </div>
 </div>
+
+<div align="left">
+    <h1>Components</h1>
+    <ul>
+        <li>Button</li>
+        <li>Container</li>
+        <li>Header</li>
+        <li>Image</li>
+        <li>Input</li>
+        <li>Select</li>
+    </ul>
+</div>

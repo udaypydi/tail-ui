@@ -13,3 +13,10 @@ Header Type:
     <Header text="Header 4" type="h4" />
 ```
 
+Disabled Header:
+
+```js
+    <Header text="Header 1" disabled />
+```
+
+

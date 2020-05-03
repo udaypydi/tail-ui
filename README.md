@@ -37,6 +37,7 @@
 
 <div align="left">
     <h1>Usage</h1>
+    <strong>Button</strong>
     <code>
         ``` jsx
             import { Button } from 'tail-ui';

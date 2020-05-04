@@ -22,3 +22,30 @@
         </a>
     </div>
 </div>
+
+<div align="left">
+    <h1>Components</h1>
+    <ul>
+        <li>Button</li>
+        <li>Container</li>
+        <li>Header</li>
+        <li>Image</li>
+        <li>Input</li>
+        <li>Select</li>
+    </ul>
+</div>
+
+<div align="left">
+    <h1>Usage</h1>
+    <strong>Button</strong>
+    <br />
+
+        import { Button } from 'tail-ui';
+
+        function App(props) {
+            return (
+                <Button style={{ background: '#0077b5', color: '#ffffff' }} />
+            )
+        }
+
+</div>

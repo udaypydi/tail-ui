@@ -1,5 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render a image as hyperlink 1`] = `
+<DocumentFragment>
+  <img
+    alt=""
+    class="h-64 w-64"
+    role="presentation"
+    src="https://www.peakfitness.co.nz/wp-content/uploads/2016/02/placeholder-10.jpg"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render a rounded image 1`] = `
+<DocumentFragment>
+  <img
+    alt=""
+    class="rounded-full h-64 w-64"
+    role="presentation"
+    src="https://www.peakfitness.co.nz/wp-content/uploads/2016/02/placeholder-10.jpg"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render an elevated image 1`] = `
+<DocumentFragment>
+  <img
+    alt=""
+    class="shadow h-64 w-64"
+    role="presentation"
+    src="https://www.peakfitness.co.nz/wp-content/uploads/2016/02/placeholder-10.jpg"
+  />
+</DocumentFragment>
+`;
+
 exports[`should take a snapshot 1`] = `
 <DocumentFragment>
   <img

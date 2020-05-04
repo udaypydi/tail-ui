@@ -7,3 +7,9 @@ it('should take a snapshot', () => {
     
     expect(asFragment(<Button buttonText="test button" />)).toMatchSnapshot()
 });
+
+it ('should render a button with text color', () => {
+    const { asFragment } = render(<Button  color="green" />)
+    
+    expect(asFragment(<Button color="green"  />)).toMatchSnapshot()
+});

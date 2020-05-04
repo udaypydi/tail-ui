@@ -10,6 +10,31 @@ exports[`should render a disabled header 1`] = `
 </DocumentFragment>
 `;
 
+exports[`should render multiple header types 1`] = `
+<DocumentFragment>
+  <p
+    class="font-bold text-6xl"
+  >
+    Header 1
+  </p>
+  <p
+    class="font-bold text-5xl"
+  >
+    Header 2
+  </p>
+  <p
+    class="font-bold text-4xl"
+  >
+    Header 3
+  </p>
+  <p
+    class="font-bold text-3xl"
+  >
+    Header 4
+  </p>
+</DocumentFragment>
+`;
+
 exports[`should take a snapshot 1`] = `
 <DocumentFragment>
   <p

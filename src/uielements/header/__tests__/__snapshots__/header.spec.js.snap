@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render a disabled header 1`] = `
+<DocumentFragment>
+  <p
+    class="font-bold text-6xl text-gray-400 cursor-not-allowed"
+  >
+    Header 1
+  </p>
+</DocumentFragment>
+`;
+
 exports[`should take a snapshot 1`] = `
 <DocumentFragment>
   <p

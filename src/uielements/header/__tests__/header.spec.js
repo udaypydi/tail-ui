@@ -7,3 +7,9 @@ it('should take a snapshot', () => {
     
     expect(asFragment(<Header />)).toMatchSnapshot()
 });
+
+it('should render a disabled header', () => {
+    const { asFragment } = render(<Header text="Header 1" disabled />)
+    
+    expect(asFragment(<Header text="Header 1" disabled />)).toMatchSnapshot()
+});

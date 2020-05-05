@@ -9,30 +9,27 @@ it('should take a snapshot', () => {
     expect(asFragment(<Button buttonText="test button" />)).toMatchSnapshot()
 });
 
-// Testing Rounded Prop
-it('should take a snapshot', () => {
+it('should render a button with text color', () => {
+    const { asFragment } = render(<Button color="green" />)
+
+    expect(asFragment(<Button color="green" />)).toMatchSnapshot()
+});
+
+it('should render a button with custom styles', () => {
+    const { asFragment } = render(<Button style={{ background: '#0077b5', color: '#ffffff' }} />)
+
+    expect(asFragment(<Button style={{ background: '#0077b5', color: '#ffffff' }} />)).toMatchSnapshot()
+});
+
+it('should render a button with custom tailwind classes', () => {
+    const { asFragment } = render(<Button className="text-green-500 border-green-500" />)
+
+    expect(asFragment(<Button className="text-green-500 border-green-500" />)).toMatchSnapshot()
+});
+
+it('should render a rounded button', () => {
     const { asFragment } = render(<Button rounded />)
 
     expect(asFragment(<Button rounded />)).toMatchSnapshot()
 });
 
-// Testing Background Color Prop
-it('should take a snapshot', () => {
-    const { asFragment } = render(<Button bgColor="red" />)
-
-    expect(asFragment(<Button bgColor="red" />)).toMatchSnapshot()
-});
-
-// Testing color Prop of the Button 
-it('should take a snapshot', () => {
-    const { asFragment } = render(<Button color="red" />)
-
-    expect(asFragment(<Button color="red" />)).toMatchSnapshot()
-});
-
-// Testing classname of Button
-it('should take a snapshot', () => {
-    const { asFragment } = render(<Button className="shadow" />)
-
-    expect(asFragment(<Button className="shadow" />)).toMatchSnapshot()
-});

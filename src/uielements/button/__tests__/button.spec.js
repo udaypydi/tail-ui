@@ -21,14 +21,14 @@ it ('should render a button with custom styles', () => {
 });
 
 it ('should render a button with custom tailwind classes', () => {
-    const { asFragment } = render(<Button className="text-green-500 border-green-500" />)
+    const { asFragment } = render(<Button className="text-green-500 border-green-500" />);
     
-    expect(asFragment(<Button className="text-green-500 border-green-500" />)).toMatchSnapshot()
+    expect(asFragment(<Button className="text-green-500 border-green-500" />)).toMatchSnapshot();
 });
 
 it ('should render a rounded button', () => {
-    const { asFragment } = render(<Button rounded />)
+    const { asFragment } = render(<Button rounded />);
     
-    expect(asFragment(<Button rounded />)).toMatchSnapshot()
+    expect(asFragment(<Button rounded />)).toMatchSnapshot();
 });
 

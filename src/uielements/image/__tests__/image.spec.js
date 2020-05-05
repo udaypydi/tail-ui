@@ -14,7 +14,7 @@ it('should render a rounded image', () => {
         className="h-64 w-64" 
         src="https://www.peakfitness.co.nz/wp-content/uploads/2016/02/placeholder-10.jpg" 
         rounded 
-    />)
+    />);
     
     expect(asFragment(<Image 
         className="h-64 w-64" 

@@ -92,4 +92,15 @@
             <Image src="https://demoimage/image.png" rounded />
         )
     }
+
+<strong>Select</strong>
+    <br />
+
+    import { Select } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Select options=[{ text: 'TailUI', value: 'tailui' }}/>
+        )
+    }
 </div>

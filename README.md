@@ -37,8 +37,8 @@
 
 <div align="left">
     <h1>Usage</h1>
-    <strong>Button</strong>
-    <br />
+        <strong>Button</strong>
+        <br />
 
         import { Button } from 'tail-ui';
 
@@ -48,4 +48,15 @@
             )
         }
 
+
+<strong>Input</strong>
+    <br />
+
+    import { Input } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Input placeholder="Placeholder Text..." rounded />
+        )
+    }
 </div>

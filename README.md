@@ -81,4 +81,15 @@
             <Header headerText="Simple Header" />
         )
     }
+
+<strong>Image</strong>
+    <br />
+
+    import { Image } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Image src="https://demoimage/image.png" rounded />
+        )
+    }
 </div>

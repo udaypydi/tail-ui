@@ -70,4 +70,15 @@
             <Container fluid raised />
         )
     }
+
+<strong>Header</strong>
+    <br />
+
+    import { Header } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Header headerText="Simple Header" />
+        )
+    }
 </div>

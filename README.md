@@ -37,8 +37,8 @@
 
 <div align="left">
     <h1>Usage</h1>
-    <strong>Button</strong>
-    <br />
+        <strong>Button</strong>
+        <br />
 
         import { Button } from 'tail-ui';
 
@@ -48,4 +48,59 @@
             )
         }
 
+
+<strong>Input</strong>
+    <br />
+
+    import { Input } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Input placeholder="Placeholder Text..." rounded />
+        )
+    }
+
+<strong>Container</strong>
+    <br />
+
+    import { Container } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Container fluid raised />
+        )
+    }
+
+<strong>Header</strong>
+    <br />
+
+    import { Header } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Header headerText="Simple Header" />
+        )
+    }
+
+<strong>Image</strong>
+    <br />
+
+    import { Image } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Image src="https://demoimage/image.png" rounded />
+        )
+    }
+
+<strong>Select</strong>
+    <br />
+
+    import { Select } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Select options=[{ text: 'TailUI', value: 'tailui' }}/>
+        )
+    }
 </div>

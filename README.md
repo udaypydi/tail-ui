@@ -59,4 +59,15 @@
             <Input placeholder="Placeholder Text..." rounded />
         )
     }
+
+<strong>Container</strong>
+    <br />
+
+    import { Container } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Container fluid raised />
+        )
+    }
 </div>

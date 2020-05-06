@@ -53,20 +53,7 @@ exports[`should render a rounded button 1`] = `
 </DocumentFragment>
 `;
 
-exports[`should take a snapshot 1`] = `
-<DocumentFragment>
-  <button
-    class="
-    bg-transparent-700 hover:bg-transparent-500 text-black-700 
-    font-semibold hover:text-black-700 py-2 px-4 border border-black-700 "
-    type="button"
-  >
-    test button
-  </button>
-</DocumentFragment>
-`;
-
-exports[`should take a snapshot 2`] = `
+exports[`should render a rounded button 2`] = `
 <DocumentFragment>
   <button
     class="
@@ -79,41 +66,15 @@ exports[`should take a snapshot 2`] = `
 </DocumentFragment>
 `;
 
-exports[`should take a snapshot 3`] = `
-<DocumentFragment>
-  <button
-    class="
-    bg-red-700 hover:bg-red-500 text-black-700 
-    font-semibold hover:text-black-700 py-2 px-4 border border-black-700 "
-    type="button"
-  >
-    Button
-  </button>
-</DocumentFragment>
-`;
-
-exports[`should take a snapshot 4`] = `
-<DocumentFragment>
-  <button
-    class="
-    bg-transparent-700 hover:bg-transparent-500 text-red-700 
-    font-semibold hover:text-red-700 py-2 px-4 border border-black-700 "
-    type="button"
-  >
-    Button
-  </button>
-</DocumentFragment>
-`;
-
-exports[`should take a snapshot 5`] = `
+exports[`should take a snapshot 1`] = `
 <DocumentFragment>
   <button
     class="
     bg-transparent-700 hover:bg-transparent-500 text-black-700 
-    font-semibold hover:text-black-700 py-2 px-4 border border-black-700 shadow"
+    font-semibold hover:text-black-700 py-2 px-4 border border-black-700 "
     type="button"
   >
-    Button
+    test button
   </button>
 </DocumentFragment>
 `;

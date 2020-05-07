@@ -1,5 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render a fluid container 1`] = `
+<DocumentFragment>
+  <div
+    class="flex w-full flex-row h-20 border border-gray-200"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render a raised container 1`] = `
+<DocumentFragment>
+  <div
+    class="flex shadow-md flex-row w-full h-20 border border-gray-200"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render a rounded container 1`] = `
+<DocumentFragment>
+  <div
+    class="flex rounded flex-row h-20 border border-gray-200"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render a rounded container 2`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col h-20 border border-gray-200 p-2"
+  >
+    <p>
+      Hello!!!
+    </p>
+    <p>
+      Welcome to TailUI
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`should take a snapshot 1`] = `
 <DocumentFragment>
   <div

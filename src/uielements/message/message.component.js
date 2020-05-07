@@ -6,23 +6,21 @@ function Message(props) {
   const {
     className, messageText, color, style, rounded, children,
   } = props;
-  let messageClass = `bg-${color}-100 border border-${color}-400 text-${color}-700 px-4 py-3 relative`;
+  const messageClass = `bg-${color}-100 border border-${color}-400 text-${color}-700 px-4 py-3 relative`;
 
-  if (rounded) {
-    messageClass += ' rounded-md';
-  }
 
   return (
     <div
       className={classnames(
         `${messageClass}`,
-        `${className}`,
+        `${className}`, {
+          'rounded-md': rounded,
+        },
       )}
       style={style}
     >
       <span className="block sm:inline">
         {messageText}
-        {' '}
         {children}
       </span>
     </div>
@@ -57,13 +55,14 @@ Message.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
-  ]).isRequired,
+  ]),
 };
 Message.defaultProps = {
   className: '',
   style: {},
   color: 'black',
   rounded: false,
+  children: '',
 };
 
 export default Message;

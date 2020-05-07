@@ -104,3 +104,15 @@
         )
     }
 </div>
+
+<strong>Message</strong>
+    <br />
+
+    import { Message } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Message className="text-green-500 border-green-500" />
+        )
+    }
+</div>

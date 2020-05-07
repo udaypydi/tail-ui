@@ -32,6 +32,7 @@
         <li>Image</li>
         <li>Input</li>
         <li>Select</li>
+        <li>Message</li>
     </ul>
 </div>
 

@@ -32,6 +32,7 @@
         <li>Image</li>
         <li>Input</li>
         <li>Select</li>
+        <li>Message</li>
     </ul>
 </div>
 
@@ -101,6 +102,18 @@
     function App(props) {
         return (
             <Select options=[{ text: 'TailUI', value: 'tailui' }}/>
+        )
+    }
+</div>
+
+<strong>Message</strong>
+    <br />
+
+    import { Message } from 'tail-ui';
+
+    function App(props) {
+        return (
+            <Message className="text-green-500 border-green-500" />
         )
     }
 </div>

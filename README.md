@@ -5,13 +5,9 @@
 </div>
 
 <div align="center">
-    <strong>A react ui library built using tailwind css</strong>
+    <strong>A React UI library built using tailwind css</strong>
     <br />
     <div>
-        <!-- travis -->
-        <a href="https://travis-ci.com/github/udaypydi/tail-ui">
-            <img src="https://api.travis-ci.com/udaypydi/tail-ui.svg" alt="Test Coverage" />
-        </a>
         <!-- Mit License -->
         <a href="https://github.com/udaypydi/tail-ui/blob/master/LICENSE">
             <img src="https://img.shields.io/github/license/udaypydi/tail-ui">
@@ -23,6 +19,19 @@
     </div>
 </div>
 
+<div align="left">
+    <h1>Installtion</h1>
+    <p>Install <code>tailwind-ui-react</code>:</p>
+
+    // using npm
+    npm i --save tailwind-ui-react
+    
+    or
+
+    // using yarn
+    yarn add tailwind-ui-react
+    
+</div>
 <div align="left">
     <h1>Components</h1>
     <ul>

@@ -24,6 +24,19 @@
 </div>
 
 <div align="left">
+    <h1>Installtion</h1>
+    <p>Install <code>tailwind-ui-react</code>:</p>
+
+    // using npm
+    npm i --save tailwind-ui-react
+    
+    or
+
+    // using yarn
+    yarn add tailwind-ui-react
+    
+</div>
+<div align="left">
     <h1>Components</h1>
     <ul>
         <li>Button</li>

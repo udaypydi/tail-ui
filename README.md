@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-    <strong>A react ui library built using tailwind css</strong>
+    <strong>A React UI library built using tailwind css</strong>
     <br />
     <div>
         <!-- travis -->

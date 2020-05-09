@@ -1,5 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render a different type input 1`] = `
+<DocumentFragment>
+  <input
+    class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal"
+    placeholder=""
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render a disabled input 1`] = `
+<DocumentFragment>
+  <input
+    class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal bg-gray-200"
+    disabled=""
+    placeholder=""
+    type="string"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render a error input 1`] = `
+<DocumentFragment>
+  <input
+    class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal bg-red-200 border-red-400 text-red-400 placeholder-red-300"
+    placeholder=""
+    type="string"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render a fluid input 1`] = `
+<DocumentFragment>
+  <input
+    class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal w-full"
+    placeholder=""
+    type="string"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render a placeholder input 1`] = `
+<DocumentFragment>
+  <input
+    class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal"
+    placeholder="Hello world!"
+    type="string"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render a rounded input 1`] = `
+<DocumentFragment>
+  <input
+    class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal rounded-md"
+    placeholder=""
+    type="string"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render a styled input 1`] = `
+<DocumentFragment>
+  <input
+    class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal"
+    placeholder=""
+    style="background: rgb(0, 119, 181); color: rgb(255, 255, 255);"
+    type="string"
+  />
+</DocumentFragment>
+`;
+
+exports[`should render new classNames for input 1`] = `
+<DocumentFragment>
+  <input
+    class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal p-1 m-1"
+    placeholder=""
+    type="string"
+  />
+</DocumentFragment>
+`;
+
 exports[`should take a snapshot 1`] = `
 <DocumentFragment>
   <input

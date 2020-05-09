@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from 'test-utils';
-import  Button from 'uielements/button/button.component.js';
+import Button from 'uielements/button/button.component.js';
 
 it('should take a snapshot', () => {
     const { asFragment } = render(<Button buttonText="test button" />);
-    
+  
     expect(asFragment(<Button buttonText="test button" />)).toMatchSnapshot();
 });
 
@@ -32,3 +32,8 @@ it ('should render a rounded button', () => {
     expect(asFragment(<Button rounded />)).toMatchSnapshot();
 });
 
+it('should render a rounded button', () => {
+    const { asFragment } = render(<Button rounded />);
+
+    expect(asFragment(<Button rounded />)).toMatchSnapshot();
+});

@@ -8,10 +8,6 @@
     <strong>A React UI library built using tailwind css</strong>
     <br />
     <div>
-        <!-- travis -->
-        <a href="https://travis-ci.com/github/udaypydi/tail-ui">
-            <img src="https://api.travis-ci.com/udaypydi/tail-ui.svg" alt="Test Coverage" />
-        </a>
         <!-- Mit License -->
         <a href="https://github.com/udaypydi/tail-ui/blob/master/LICENSE">
             <img src="https://img.shields.io/github/license/udaypydi/tail-ui">

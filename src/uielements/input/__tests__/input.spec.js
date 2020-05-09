@@ -1,5 +1,7 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { render } from 'test-utils';
+import ReactTestUtils from 'react-dom/test-utils';
 import Input from 'uielements/input/input.component.js';
 
 it('should take a snapshot', () => {
@@ -54,4 +56,25 @@ it('should render a error input', () => {
     const { asFragment } = render(<Input error />);
 
     expect(asFragment(<Input error />)).toMatchSnapshot();
+});
+
+let div;
+
+beforeEach(() => {
+    div = document.createElement("div");
+});
+
+it('captures changes in input', done => {
+    const ref = React.createRef();
+    function handleChange(evt) {
+        expect(evt.target.value).toEqual("Hello!");
+        done();
+    }
+
+    ReactDOM.render(<Input onChange={handleChange} ref={ref} />, div);
+    ReactTestUtils.Simulate.change(ref.current, { target: { value: "Hello!" } });
+});
+
+afterEach(() => {
+    ReactDOM.unmountComponentAtNode(div);
 });

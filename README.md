@@ -21,7 +21,7 @@
 
 <div align="left">
     <h1>Installtion</h1>
-    <p>Install <code>tailwind-ui-react</code>:</p>
+    <p>Install <code>tailwind-ui-react</code> locally:</p>
 
     // using npm
     npm i --save tailwind-ui-react

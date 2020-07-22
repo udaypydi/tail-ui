@@ -6,8 +6,8 @@
   "scripts": {
     "build": "npm run build:css && webpack ---config ./config/webpack.prod.config.js",
     "dev": "npm run watch:css && webpack-dev-server --config ./config/webpack.dev.config.js",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx src/",
-    "lint:fix": "./node_modules/.bin/eslint --ext .js,.jsx src/ --fix",
+    "lint": "eslint --ext .js,.jsx src/",
+    "lint:fix": "eslint --ext .js,.jsx src/ --fix",
     "build:css": "postcss src/assets/css/styles.css -o src/assets/css/main.css",
     "watch:css": "postcss src/assets/css/styles.css -o src/assets/css/main.css",
     "test": "jest --collect-coverage",
@@ -27,7 +27,12 @@
     "tailwindcss",
     "react ui component"
   ],
-  "files": ["lib", "package.json", "LICENSE", "README.md"],
+  "files": [
+    "lib",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
   "author": "Uday Bhaskhar",
   "license": "MIT",
   "dependencies": {
@@ -69,5 +74,13 @@
     "style-loader": "^1.1.3",
     "webpack-bundle-analyzer": "^3.6.1",
     "webpack-dev-server": "^3.10.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvhk/tail-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mvhk/tail-ui/issues"
+  },
+  "homepage": "https://github.com/mvhk/tail-ui#readme"
 }

@@ -3,7 +3,7 @@
         <h1>Tail UI</h1>
     </a>
 </div>
-
+<p>A lite weight react component library built with love for React Hooks, Tailwind Css and React Developers. Its easy to get started, simple and consists of tiny components</p>
 <div align="center">
     <strong>A React UI library built using tailwind css</strong>
     <br />

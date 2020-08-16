@@ -1,9 +1,9 @@
-import Button from 'uielements/button/button.component';
-import Input from 'uielements/input/input.component';
-import Container from 'uielements/container/Container.component';
-import Header from 'uielements/header/header.component';
-import Image from 'uielements/image/image.component';
-import Select from 'uielements/select/select.component';
+import Button from './button/button.component';
+import Input from './input/input.component';
+import Container from './container/Container.component';
+import Header from './header/header.component';
+import Image from './image/image.component';
+import Select from './select/select.component';
 
 const Components = {
     Button,

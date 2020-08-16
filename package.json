@@ -2,7 +2,7 @@
   "name": "tail-ui",
   "version": "1.0.0",
   "description": "A UI library for React built on Tailwind Css ",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "npm run build:css && webpack ---config ./config/webpack.prod.config.js",
     "dev": "npm run watch:css && webpack-dev-server --config ./config/webpack.dev.config.js",
@@ -15,7 +15,7 @@
     "start:docs": "npx styleguidist server",
     "build:docs": "npx styleguidist build",
     "test:watch": "jest --watch",
-    "publish:npm": "rm -rf dist && mkdir dist &&  babel ./index.js -d dist --copy-files"
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src/uielements --out-dir dist --copy-files"
   },
   "keywords": [
     "react",
@@ -37,10 +37,12 @@
   "author": "Uday Bhaskhar",
   "license": "MIT",
   "dependencies": {
+    "@babel/cli": "^7.10.5",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.9.4",
     "autoprefixer": "^9.7.6",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "classnames": "^2.2.6",
     "postcss-cli": "^7.1.0",

@@ -17,6 +17,7 @@
     "test:watch": "jest --watch",
     "publish:npm": "rm -rf dist && mkdir dist &&  babel src/uielements --out-dir dist --copy-files"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "keywords": [
     "react",
     "boilerplate",

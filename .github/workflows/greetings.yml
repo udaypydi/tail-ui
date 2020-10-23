@@ -10,4 +10,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Welcome to Tail UI. Kudos on the first issue.'' first issue'
-        pr-message: 'Welcome to Tail UI. Congratulations on your first PR'' first pr'
+        pr-message: 'Welcome to Tail UI. Kudos on the first PR. Thanks for taking time. The PR is in review. Happy Coding! '' first pr'

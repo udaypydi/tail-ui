@@ -1,3 +1,5 @@
+// Root component where all elements are imported
+
 import Button from './button/button.component';
 import Input from './input/input.component';
 import Container from './container/Container.component';

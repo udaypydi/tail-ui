@@ -66,6 +66,7 @@ Button.propTypes = {
    * Adds default border radius to button.
    * The border radius can be modified through custom styles
    * or through tailwind classname (`rounded`, `rounded-sm`, `rounded-md` etc)
+   * radius based on rounded sizes
    */
   rounded: PropTypes.bool,
 };
